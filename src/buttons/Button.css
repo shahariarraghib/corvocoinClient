@@ -1,0 +1,101 @@
+:root {
+  --primary: #fff;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  color: #242424;
+  border: 1px solid var(--primary);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #fff;
+  /* padding: 8px 20px; */
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--outline:hover{
+  background-color: transparent !important;
+  border: 1px solid var(--primary);
+}
+
+.btn--medium {
+  padding: 2px 20px;
+  font-size: 18px;
+}
+
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+
+.btn--large:hover,
+.btn--medium:hover {
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #242424;
+  transition: 250ms;
+}
+
+#connecting-button {
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(219, 18, 58);
+  color: rgb(245, 239, 239);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#connecting-button:hover {
+  background-color: rgb(255, 68, 99);
+}
+
+#connecting-button:active {
+  background-color: rgb(r153ed, 21, 47);
+}
+
+#connecting-button .loading {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid rgb(0, 0, 0, 0.2);
+  border-right-color: rgb(245, 239, 239);
+  animation: connecting-animation 2s linear infinite;
+}
+
+#connecting-button h3 {
+  margin: 0;
+  padding: 0;
+}
+
+#connecting-button .loading * {
+  display: none;
+}
+
+@keyframes connecting-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
