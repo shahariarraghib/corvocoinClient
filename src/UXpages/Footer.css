@@ -48,14 +48,21 @@
 
 .footer-links {
   width: 100%;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-link-wrapper {
   display: flex;
+  justify-content: space-between !important;
+  
 }
 
 .footer-link-items {
@@ -112,7 +119,7 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  max-width: 1000px;
+  /* max-wid/th: 1000px; */
   margin: 40px auto 0 auto;
 }
 

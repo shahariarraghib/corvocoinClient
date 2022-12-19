@@ -108,10 +108,10 @@ const handleSubmit = (e) => {
         
       </section>
 
+      <div style={{  width:'80%' }}>
+        <p>dihadf</p>
 
-
-      <div class="footer-links">
-        <div className="footer-link-wrapper">
+        <div className="footer">
           <div class="footer-link-items">
             <h2>Footer.js line 27</h2>
             <Link to="/">Footer.js line 28</Link>
@@ -121,8 +121,6 @@ const handleSubmit = (e) => {
             <Link to="/">Footer.js line 32</Link>
             <Link to="/">Footer.js line 33</Link>
           </div>
-        </div>
-        <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>Footer.js line 38</h2>
             <Link to="/">Footer.js line 39</Link>
@@ -137,6 +135,37 @@ const handleSubmit = (e) => {
             <Link to="/">Footer.js line 48</Link>
           </div>
         </div>
+      </div>
+
+
+
+      <div class="">
+        {/* <div className="footer">
+          <div class="footer-link-items">
+            <h2>Footer.js line 27</h2>
+            <Link to="/">Footer.js line 28</Link>
+          </div>
+          <div class="footer-link-items">
+            <h2>Footer.js line 33</h2>
+            <Link to="/">Footer.js line 32</Link>
+            <Link to="/">Footer.js line 33</Link>
+          </div>
+          <div class="footer-link-items">
+            <h2>Footer.js line 38</h2>
+            <Link to="/">Footer.js line 39</Link>
+            <Link to="/">Footer.js line 40</Link>
+            <Link to="/">Footer.js line 41</Link>
+          </div>
+          <div class="footer-link-items">
+            <h2>Footer.js line 44</h2>
+            <Link to="/">Footer.js line 45</Link>
+            <Link to="/">Footer.js line 46</Link>
+            <Link to="/">Footer.js line 47</Link>
+            <Link to="/">Footer.js line 48</Link>
+          </div>
+        </div> */}
+   
+      
       </div>
       <section class="social-media">
         <div class="social-media-wrap">
