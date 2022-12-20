@@ -71,6 +71,16 @@
   
 }
 
+.btn-inputqualifications{
+  background-color: yellow;
+  font-weight: 400;
+  color: white;
+  width: 260px;
+  line-height: 40px;
+  border: 1px solid white;
+  
+}
+
 
 .not-allowed{
   cursor: not-allowed! important;

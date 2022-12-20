@@ -99,12 +99,12 @@ const handleSubmit = (e) => {
             <button className="btn-input"
               disabled
              onClick={getInputValue} 
-            >Footer.js line 300</button>
+            >Footer.js line 20</button>
             </div> :  <div>
-            <button className="btn-input"
+            <button className="btn-inputqualifications"
               
              onClick={getInputValue} 
-            >Footer.js line 400</button>
+            >Footer.js line 20</button>
             </div>}
            
 
