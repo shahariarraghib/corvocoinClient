@@ -81,17 +81,32 @@ const handleSubmit = (e) => {
               Value={saveInputValue}
               onChange= {(e) => handleSubmit(e) }
             /></div>
-            
+
 
 {/* 
           <button  disabled={ userEmail === null || userName === null || userPhone === null  &&  true}>Disabled button</button> */}
 
-            <div>
+            {/* <div>
             <button className="btn-input" disabled = { userEmail === null || userName === null || userPhone === null  ?   true : false}
               
              onClick={userEmail === null || userName === null || userPhone === null  ?   null : getInputValue} 
             >Footer.js line 20</button>
-            </div>
+            </div> */}
+
+
+            
+            {userEmail === null || userName === null || userPhone === null ?  <div>
+            <button className="btn-input"
+              disabled
+             onClick={getInputValue} 
+            >Footer.js line 300</button>
+            </div> :  <div>
+            <button className="btn-input"
+              
+             onClick={getInputValue} 
+            >Footer.js line 400</button>
+            </div>}
+           
 
           <div>
           <Dropdown className="mx-2 ">
