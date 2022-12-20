@@ -172,3 +172,22 @@
 @media screen and (max-width: 768px) {
 }
 
+.btn-outline-footer{
+  
+    background-color: transparent;
+    color: #fff;
+    /* padding: 8px 20px; */
+    border: 1px solid var(--primary);
+   
+}
+
+.btn-outline-footer:hover{
+  background-color: transparent !important;
+  border: 1px solid var(--primary) !important;
+ 
+}
+
+.Item1{
+  background-color: transparent !important;
+  border: 1px solid var(--primary) !important;
+}

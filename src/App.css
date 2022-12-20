@@ -42,3 +42,37 @@
   color: #212329;
   font-size: 100px;
 }
+
+.btn-signin{
+  background-color: transparent;
+  font-weight: 400;
+  color: white;
+  width: 260px;
+  border: 1px solid white;
+  padding: 8px 18px;
+}
+
+.btn-signin:hover{
+  background-color: white;
+  font-weight: 400;
+  color: black;
+  width: 260px;
+  border: 1px solid black;
+  padding: 8px 18px;
+}
+
+.btn-input{
+  background-color: transparent;
+  font-weight: 400;
+  color: white;
+  width: 260px;
+  line-height: 40px;
+  border: 1px solid white;
+  
+}
+
+
+.not-allowed{
+  cursor: not-allowed! important;
+     
+ }

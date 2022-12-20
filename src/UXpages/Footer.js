@@ -72,34 +72,40 @@ const handleSubmit = (e) => {
         <p className="footer-subscription-text">Footer.js line 11</p>
         <div className="input-areas">
 
-          <form className="d-flex flex-row">
-            <input
+          <form className="d-flex ">
+            <div><input
               className="footer-input"
               name={selectedItem}
               type={selectedItem}
               placeholder={`your ${selectedItem}`}
               Value={saveInputValue}
               onChange= {(e) => handleSubmit(e) }
-            />
+            /></div>
+            
 
 {/* 
           <button  disabled={ userEmail === null || userName === null || userPhone === null  &&  true}>Disabled button</button> */}
 
-          <Button  buttonStyle="btn--outline"  disabled = { userEmail === null || userName === null || userPhone === null  ?   true : false}  
-         onClick={userEmail === null || userName === null || userPhone === null  ?   null : getInputValue}
-            >Footer.js line 20</Button>
+            <div>
+            <button className="btn-input" disabled = { userEmail === null || userName === null || userPhone === null  ?   true : false}
+              
+             onClick={userEmail === null || userName === null || userPhone === null  ?   null : getInputValue} 
+            >Footer.js line 20</button>
+            </div>
 
+          <div>
           <Dropdown className="mx-2 ">
-                    <Dropdown.Toggle id="dropdown-basic" className="btn--outline">
+                    <Dropdown.Toggle id="dropdown-basic" className="btn-outline-footer Item1">
                     {selectedItem}
                     </Dropdown.Toggle>
 
-                    <Dropdown.Menu>
-                      <Dropdown.Item  onClick={(e) => setSelectedItem("Name")} >Name</Dropdown.Item>
+                    <Dropdown.Menu className="">
+                      <Dropdown.Item className="" onClick={(e) => setSelectedItem("Name")} >Name</Dropdown.Item>
                       <Dropdown.Item onClick={(e) => setSelectedItem("Email")}>Email</Dropdown.Item>
                       <Dropdown.Item onClick={(e) => setSelectedItem("Phone Number")}>Phone Number</Dropdown.Item>
                     </Dropdown.Menu>
             </Dropdown>
+          </div>
 
 
           </form>

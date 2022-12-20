@@ -25,12 +25,14 @@
 }
 
 .btn--outline:hover{
-  background-color: transparent !important;
+  background-color: white !important;
   border: 1px solid var(--primary);
 }
 
+
+
 .btn--medium {
-  padding: 2px 20px;
+  padding: 8px 20px;
   font-size: 18px;
 }
 
