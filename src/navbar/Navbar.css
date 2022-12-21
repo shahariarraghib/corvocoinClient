@@ -1,14 +1,27 @@
-.navbar {
+/* .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   height: 90px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
  
+} */
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  height: 90px;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .navbar-container {
@@ -20,14 +33,21 @@
 }
 
 .navbar-logo {
-  color: #fff;
-  justify-self: start;
-  margin-left: 20px;
+  color: #fff !important;
+  /* justify-self: start;
+  margin-left: 20px; */
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
+}
+
+.homeLogo{
+  margin-left: 20px;
+}
+.loginbtn{
+  margin-right: 20px;
 }
 
 .fa-typo3 {
@@ -37,27 +57,36 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(6, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
   width: 60vw;
-  justify-content: center;
-  margin: 2rem;
- padding-top: 4rem;
+  justify-content: start;
+  /* margin: 2rem; */
+ /* padding-top: 4rem; */
+ margin-top: 13px;
 }
 
 .nav-item {
-  height: 80px;
+  /* height: 80px; */
 }
+.navBarLeft{
+  display: flex;
+}
+
+
 .active_nav{
-  color: green;
-  font-weight: bolder;
-  font-size: 22px;
+  color: green !important;
+  font-weight: bolder !important;
+  font-size: 22px !important;
+ 
+ 
+ 
 }
 
 .nav-links {
-  color: #fff;
+  color: #fff !important;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -68,11 +97,12 @@
 .nav-links:hover {
   /* border-bottom: 4px solid #fff;
   transition: all 0.2s ease-out; */
-  color: red;
+  color: red !important;
+  position: relative;
 }
 
 .fa-bars {
-  color: #fff;
+  color: #fff !important;
 }
 
 .nav-links-mobile {
@@ -165,7 +195,7 @@
   }
 }
 
-    Link:active {
-    color: green;
+    /* Link:active {
+    color: green !important;
     font-size: 50px;
-    }
+    } */

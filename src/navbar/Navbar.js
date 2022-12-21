@@ -38,10 +38,13 @@ function Navbar({isCalledEffect}) {
 
   return (
     <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          {/* BELOW = NAVBAR LOGO */}
-          <NavLink  to="/"   className="navbar-logo"  
+     
+
+      <nav className="navBar">
+
+       <div className="navBarLeft">
+       <div className="homeLogo">
+        <NavLink  to="/"   className="navbar-logo"  
               onClick={closeMobileMenu}>
             Home
             {/* <i class="fab fa-typo3" /> */}
@@ -50,8 +53,12 @@ function Navbar({isCalledEffect}) {
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+
+        </div>
+        
+        <div>
+           <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="">
               <NavLink to="/about"  className={({ isActive }) =>
               isActive ? "active_nav" : "nav-links"  
             }   onClick={closeMobileMenu}>
@@ -59,27 +66,27 @@ function Navbar({isCalledEffect}) {
               </NavLink>
             </li>
             
-            <li className="nav-item">
+            <li className="">
               <NavLink to="/media"  className={({ isActive }) =>
               isActive ? "active_nav" : "nav-links"  } onClick={closeMobileMenu}>
                 Media
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="">
               <NavLink to="/shop" className={({ isActive }) =>
               isActive ? "active_nav" : "nav-links" }  onClick={closeMobileMenu}>
                 Shop
               </NavLink>
             </li>
 
-            <li className="nav-item">
+            <li className="">
               <NavLink to="/mediahighlight" className={({ isActive }) =>
               isActive ? "active_nav" : "nav-links" }  onClick={closeMobileMenu}>
                 MediaHighlight
               </NavLink>
             </li>
             
-            {isLogin && <li className="nav-item">
+            {isLogin && <li className="">
               <NavLink to="/devPage" className={({ isActive }) =>
               isActive ? "active_nav" : "nav-links" }  onClick={closeMobileMenu}>
                 Dev Page
@@ -97,16 +104,17 @@ function Navbar({isCalledEffect}) {
 
             
           </ul>
+          </div>
+       </div>
 
+          <div className="loginbtn">
           <NavLink
                 to="/login"
                
               >
                  {button && <Button buttonStyle="btn--outline">Login</Button>}
               </NavLink>
-       
-          {/* {button && <Button buttonStyle="btn--outline">Login</Button>} */}
-        </div>
+          </div>
       </nav>
     </>
   );
